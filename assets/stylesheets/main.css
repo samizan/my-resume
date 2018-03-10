@@ -19,18 +19,26 @@ html, body {
 }
 
 footer {
-  color: white;
-  font-size: 0.7em;
+  color: #13b0a5;
+  font-size: 0.8em;
   margin: 10px;
+  padding: 30px;
+  background-color: #F7F7F7;
+  min-height: 50px;
 }
 
-a { cursor: pointer;
+a { 
+  cursor: pointer;
 }
 
 h1 {
     font-size: 3em;
     color: white;
     padding-top: 100px;
+}
+
+h2 {
+  color: black;
 }
 
 h3 {
@@ -60,13 +68,16 @@ h5 {
     border-bottom: 2px solid black;
 }
 
+.navbar-header {
+  background-color: #7d7d7d;
+}
+
 .nav > li {
     padding: 0 10px;
 }
 
 .nav > li > a {
     color: #7d7d7d;
-    /*color: white;*/
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.8em;
@@ -79,6 +90,8 @@ h5 {
 
 .navbar-toggle {
     background-color: #eee;
+    float: left;
+    margin: 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -87,7 +100,7 @@ h5 {
 
 .typed-element {
     min-height: 50px;
-    color: #13b0a5;
+    color: white;
     font-weight: bold;
 }
 
@@ -102,9 +115,14 @@ h5 {
     margin: 5px;
 }
 
+.flex-item:last-child {
+  color: black;
+}
+
 .home__welcome {
     font-size: 1.3em;
     font-weight: 500;
+    padding-top: 20px;
 }
 
 .btn {
@@ -129,10 +147,11 @@ h5 {
 #home {
 
     box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-    min-height: 500px;
-    padding-top: 40px;
-    height: 500px;
+    min-height: 400px;
+    height: 400px;
     color: white;
+    background-color: #13b0a5;
+
 }
 
 #home:before {
@@ -156,7 +175,7 @@ section {
     margin-bottom: 50px;
 }
 
-section:first-child, section:last-child {
+section:first-child, section:nth-child(2), section:last-child {
     margin-bottom: 0;
 }
 
@@ -327,6 +346,10 @@ progress[value]::-moz-progress-bar {
     width: calc(100vw - 121px);
   }
 
+  .timeline ul li div img {
+    max-width: 100%;
+  }
+
   .timeline ul li:nth-child(even) div {
     left: 25px;
   }
@@ -365,14 +388,19 @@ progress[value]::-moz-progress-bar {
     vertical-align: text-bottom;
     color: black;
     padding: 20px;
-    margin-left: 25%;
+    margin: 0 35%;
     margin-bottom: 10px;
     font-weight: 700;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
+#education .date::before {
+  padding: 0;
+}
+
 .education ul {
     padding: 0;
+    text-align: left;
 }
 .education ul li {
   list-style-type: none;
@@ -381,8 +409,6 @@ progress[value]::-moz-progress-bar {
 
 .education ul li div:nth-of-type(even) {
     padding: 30px;
-    color: black;
-    max-width: 450px;
 }
 
 #languages {
